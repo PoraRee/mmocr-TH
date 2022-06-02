@@ -142,3 +142,7 @@ mmocr/.mim
 workdirs/
 .history/
 .dev/
+
+# Local Dataset and file
+mmocr/data
+mmocr.ipynb
