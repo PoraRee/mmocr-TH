@@ -144,5 +144,6 @@ workdirs/
 .dev/
 
 # Local Dataset and file
+INFO
 mmocr/data
 mmocr.ipynb
