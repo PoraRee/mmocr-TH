@@ -1,13 +1,13 @@
-num_chars = 178
+num_chars = 179
 max_seq_len = 26
 
 label_convertor = dict(
     type='ABIConvertor',
     dict_list=list('0123456789abcdefghijklmnopqrstuvwxyz'
-                    'ABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()'
-                    '*+,-./:;<=>?@[\\]_`~'
-                    'กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮฤฦะัาำิีึืุูเแโใไๅํ็่้๊๋ฯฺๆ์๎๏๚๛๐๑๒๓๔๕๖๗๘๙฿'),
-    with_unknown=False,
+                   'ABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()'
+                   '*+,-./:;<=>?@[\\]_`~'
+                   'กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮฤฦะัาำิีึืุูเแโใไๅํ็่้๊๋ฯฺๆ์๎๏๚๛๐๑๒๓๔๕๖๗๘๙฿'),
+    with_unknown=True,
     with_padding=False,
     lower=True,)
 

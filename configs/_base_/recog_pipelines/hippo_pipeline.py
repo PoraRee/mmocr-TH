@@ -1,11 +1,11 @@
-img_norm_cfg = dict(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])  
+img_norm_cfg = dict(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(
         type='ResizeOCR',
         height=32,
-        min_width=32,
-        max_width=160,
+        min_width=128,
+        max_width=128,
         keep_aspect_ratio=True,
         width_downsample_ratio=0.25),
     dict(type='ToTensorOCR'),
@@ -22,8 +22,8 @@ test_pipeline = [
     dict(
         type='ResizeOCR',
         height=32,
-        min_width=32,
-        max_width=160,
+        min_width=128,
+        max_width=128,
         keep_aspect_ratio=True,
         width_downsample_ratio=0.25),
     dict(type='ToTensorOCR'),
