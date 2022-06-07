@@ -1,6 +1,6 @@
 _base_ = [
     '../../_base_/default_runtime.py',
-    '../../_base_/recog_models/hippo.py',
+    '../../_base_/recog_models/robust_scanner.py',
     '../../_base_/schedules/schedule_adam_step_5e.py',
     '../../_base_/recog_pipelines/hippo_pipeline.py',
     '../../_base_/recog_datasets/trdgTH_data.py'
@@ -13,8 +13,10 @@ train_pipeline = {{_base_.train_pipeline}}
 test_pipeline = {{_base_.test_pipeline}}
 
 data = dict(
+    samples_per_gpu=64,
     workers_per_gpu=2,
-    samples_per_gpu=8,
+    val_dataloader=dict(samples_per_gpu=1),
+    test_dataloader=dict(samples_per_gpu=1),
     train=dict(
         type='UniformConcatDataset',
         datasets=train_list,
