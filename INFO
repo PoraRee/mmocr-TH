@@ -1,0 +1,93 @@
+2022-06-07 09:34:45,792 - mmocr - INFO - Start running, host: PoraRee@LAPTOP-HDKVHJ9D, work_dir: c:\Users\PoraRee\Desktop\mmocr-TH\demo\model_weight\hippo_robust_scanner
+2022-06-07 09:34:45,793 - mmocr - INFO - Hooks will be executed in the following order:
+before_run:
+(VERY_HIGH   ) StepLrUpdaterHook                  
+(NORMAL      ) CheckpointHook                     
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_train_epoch:
+(VERY_HIGH   ) StepLrUpdaterHook                  
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_train_iter:
+(VERY_HIGH   ) StepLrUpdaterHook                  
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_train_iter:
+(ABOVE_NORMAL) OptimizerHook                      
+(NORMAL      ) CheckpointHook                     
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+after_train_epoch:
+(NORMAL      ) CheckpointHook                     
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_val_epoch:
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_val_iter:
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_val_iter:
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_val_epoch:
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+after_run:
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+2022-06-07 09:34:45,795 - mmocr - INFO - workflow: [('train', 1)], max: 5 epochs
+2022-06-07 09:34:45,799 - mmocr - INFO - Checkpoints will be saved to c:\Users\PoraRee\Desktop\mmocr-TH\demo\model_weight\hippo_robust_scanner by HardDiskBackend.
+2022-06-07 09:35:37,865 - mmocr - INFO - Epoch [1][40/47]	lr: 1.250e-04, eta: 0:04:11, time: 1.289, data_time: 0.369, memory: 3097, loss_ce: 2.4910, loss: 2.4910
+2022-06-07 09:35:43,209 - mmocr - INFO - Saving checkpoint at 1 epochs
+2022-06-07 09:36:36,213 - mmocr - INFO - Epoch [2][40/47]	lr: 1.250e-04, eta: 0:02:47, time: 1.174, data_time: 0.445, memory: 3097, loss_ce: 1.9584, loss: 1.9584
+2022-06-07 09:36:41,588 - mmocr - INFO - Saving checkpoint at 2 epochs
+2022-06-07 09:37:30,473 - mmocr - INFO - Epoch [3][40/47]	lr: 1.250e-04, eta: 0:01:46, time: 1.083, data_time: 0.345, memory: 3097, loss_ce: 1.8487, loss: 1.8487
+2022-06-07 09:38:10,476 - mmocr - INFO - Start running, host: PoraRee@LAPTOP-HDKVHJ9D, work_dir: c:\Users\PoraRee\Desktop\mmocr-TH\demo\model_weight\hippo_robust_scanner
+2022-06-07 09:38:10,478 - mmocr - INFO - Hooks will be executed in the following order:
+before_run:
+(VERY_HIGH   ) StepLrUpdaterHook                  
+(NORMAL      ) CheckpointHook                     
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_train_epoch:
+(VERY_HIGH   ) StepLrUpdaterHook                  
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_train_iter:
+(VERY_HIGH   ) StepLrUpdaterHook                  
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_train_iter:
+(ABOVE_NORMAL) OptimizerHook                      
+(NORMAL      ) CheckpointHook                     
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+after_train_epoch:
+(NORMAL      ) CheckpointHook                     
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_val_epoch:
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_val_iter:
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_val_iter:
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_val_epoch:
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+after_run:
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+2022-06-07 09:38:10,480 - mmocr - INFO - workflow: [('train', 1)], max: 5 epochs
+2022-06-07 09:38:10,481 - mmocr - INFO - Checkpoints will be saved to c:\Users\PoraRee\Desktop\mmocr-TH\demo\model_weight\hippo_robust_scanner by HardDiskBackend.
