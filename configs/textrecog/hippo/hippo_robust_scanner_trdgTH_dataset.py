@@ -1,7 +1,7 @@
 _base_ = [
     '../../_base_/default_runtime.py',
-    '../../_base_/recog_models/robust_scanner.py',
-    '../../_base_/schedules/schedule_adam_step_5e.py',
+    '../../_base_/recog_models/hippo_robust_scanner.py',
+    '../../_base_/schedules/schedule_adam_step_20e.py',
     '../../_base_/recog_pipelines/hippo_pipeline.py',
     '../../_base_/recog_datasets/trdgTH_data.py'
 ]
