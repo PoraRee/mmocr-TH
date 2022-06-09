@@ -1,4 +1,4 @@
-num_chars = 179
+num_chars = 180
 max_seq_len = 26
 
 label_convertor = dict(
@@ -6,10 +6,10 @@ label_convertor = dict(
     dict_list=list('0123456789abcdefghijklmnopqrstuvwxyz'
                    'ABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()'
                    '*+,-./:;<=>?@[\\]_`~'
-                   'กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮฤฦะัาำิีึืุูเแโใไๅํ็่้๊๋ฯฺๆ์๎๏๚๛๐๑๒๓๔๕๖๗๘๙฿'),
+                   'กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮฤฦะัาำิีึืุูเแโใไๅํ็่้๊๋ฯฺๆ์๎๏๚๛๐๑๒๓๔๕๖๗๘๙฿ '),
     with_unknown=True,
     with_padding=False,
-    lower=True,)
+    lower=False,)
 
 model = dict(
     type='ABINet',

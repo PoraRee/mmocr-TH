@@ -1,9 +1,9 @@
 label_convertor = dict(
     type='AttnConvertor',
     dict_list=list('0123456789abcdefghijklmnopqrstuvwxyz'
-                    'ABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()'
-                    '*+,-./:;<=>?@[\\]_`~'
-                    'กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮฤฦะัาำิีึืุูเแโใไๅํ็่้๊๋ฯฺๆ์๎๏๚๛๐๑๒๓๔๕๖๗๘๙฿'),
+                   'ABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()'
+                   '*+,-./:;<=>?@[\\]_`~'
+                   'กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮฤฦะัาำิีึืุูเแโใไๅํ็่้๊๋ฯฺๆ์๎๏๚๛๐๑๒๓๔๕๖๗๘๙฿ '),
     with_unknown=True)
 
 hybrid_decoder = dict(type='SequenceAttentionDecoder')
