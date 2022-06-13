@@ -2,7 +2,7 @@ _base_ = [
     '../../_base_/default_runtime.py', '../../_base_/recog_models/hippo_crnn.py',
     '../../_base_/recog_pipelines/crnn_pipeline.py',
     '../../_base_/recog_datasets/trdgTH_data.py',
-    '../../_base_/schedules/schedule_hippo.py',
+    '../../_base_/schedules/schedule_adam_step_12e.py',
 ]
 
 train_list = {{_base_.train_list}}
