@@ -2,7 +2,7 @@ _base_ = [
     '../../_base_/default_runtime.py', '../../_base_/recog_models/hippo_crnn.py',
     '../../_base_/recog_pipelines/crnn_pipeline.py',
     '../../_base_/recog_datasets/trdgTH_data.py',
-    '../../_base_/schedules/schedule_adam_step_20e.py',
+    '../../_base_/schedules/schedule_hippo.py',
 ]
 
 train_list = {{_base_.train_list}}
@@ -12,7 +12,7 @@ train_pipeline = {{_base_.train_pipeline}}
 test_pipeline = {{_base_.test_pipeline}}
 
 data = dict(
-    samples_per_gpu=16,
+    samples_per_gpu=32,
     workers_per_gpu=4,
     val_dataloader=dict(samples_per_gpu=1),
     test_dataloader=dict(samples_per_gpu=1),
