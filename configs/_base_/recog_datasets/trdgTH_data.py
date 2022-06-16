@@ -63,10 +63,9 @@ test2 = dict(
     loader=dict(
         type='AnnFileLoader',
         parser=dict(
-            type='LineStrParser',
+            type='LineJsonParser',
             keys=['filename', 'text'],
-            keys_idx=[0, 1],
-            separator=' ')),
+        )),
     pipeline=None,
     test_mode=True)
 
