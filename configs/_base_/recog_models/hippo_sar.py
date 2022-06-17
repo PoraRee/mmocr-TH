@@ -8,7 +8,7 @@ label_convertor = dict(
 
 model = dict(
     type='SARNet',
-    backbone=dict(type='ResNet31OCR'
+    backbone=dict(type='ResNet31OCR',
                   layers=[2, 2, 2, 2]
                   ),
     encoder=dict(
