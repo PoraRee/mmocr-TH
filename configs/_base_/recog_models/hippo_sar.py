@@ -1,14 +1,16 @@
 label_convertor = dict(
     type='AttnConvertor',
     dict_list=list('0123456789abcdefghijklmnopqrstuvwxyz'
-                    'ABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()'
-                    '*+,-./:;<=>?@[\\]_`~'
-                    'กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮฤฦะัาำิีึืุูเแโใไๅํ็่้๊๋ฯฺๆ์๎๏๚๛๐๑๒๓๔๕๖๗๘๙฿'),
+                   'ABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()'
+                   '*+,-./:;<=>?@[\\]_`~'
+                   'กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮฤฦะัาำิีึืุูเแโใไๅํ็่้๊๋ฯฺๆ์๎๏๚๛๐๑๒๓๔๕๖๗๘๙฿ '),
     with_unknown=True)
 
 model = dict(
     type='SARNet',
-    backbone=dict(type='ResNet31OCR'),
+    backbone=dict(type='ResNet31OCR'
+                  layers=[2, 2, 2, 2]
+                  ),
     encoder=dict(
         type='SAREncoder',
         enc_bi_rnn=False,
