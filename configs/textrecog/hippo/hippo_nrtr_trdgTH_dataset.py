@@ -1,8 +1,9 @@
 _base_ = [
     '../../_base_/default_runtime.py',
-    '../../_base_/schedules/schedule_adam_step_5e.py',
+    '../../_base_/schedules/schedule_adam_step_20e.py',
     '../../_base_/recog_pipelines/nrtr_pipeline.py',
     '../../_base_/recog_datasets/trdgTH_data.py',
+    '../../_base_/recog_models/hippo_nrtr.py'
 ]
 
 train_list = {{_base_.train_list}}
@@ -11,31 +12,10 @@ test_list = {{_base_.test_list}}
 train_pipeline = {{_base_.train_pipeline}}
 test_pipeline = {{_base_.test_pipeline}}
 
-label_convertor = dict(
-    type='AttnConvertor',
-    dict_list=list('0123456789abcdefghijklmnopqrstuvwxyz'
-                   'ABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()'
-                   '*+,-./:;<=>?@[\\]_`~'
-                   'กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮฤฦะัาำิีึืุูเแโใไๅํ็่้๊๋ฯฺๆ์๎๏๚๛๐๑๒๓๔๕๖๗๘๙฿'),
-    with_unknown=True)
-
-model = dict(
-    type='NRTR',
-    backbone=dict(
-        type='ResNet31OCR',
-        layers=[1, 2, 5, 3],
-        channels=[32, 64, 128, 256, 512, 512],
-        stage4_pool_cfg=dict(kernel_size=(2, 1), stride=(2, 1)),
-        last_stage_pool=True),
-    encoder=dict(type='NRTREncoder'),
-    decoder=dict(type='NRTRDecoder'),
-    loss=dict(type='TFLoss'),
-    label_convertor=label_convertor,
-    max_seq_len=40)
 
 data = dict(
-    samples_per_gpu=8,
-    workers_per_gpu=4,
+    samples_per_gpu=32,
+    workers_per_gpu=2,
     train=dict(
         type='UniformConcatDataset',
         datasets=train_list,
