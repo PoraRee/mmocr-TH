@@ -335,6 +335,9 @@ class MMOCR:
             'MASTER': {
                 'config': 'master/master_r31_12e_ST_MJ_SA.py',
                 'ckpt': 'master/master_r31_12e_ST_MJ_SA-787edd36.pth'
+            },
+            'hippo_crnn': {
+                'config': 'hippo/hippo_crnn_trdgTH_dataset.py',
             }
         }
 
